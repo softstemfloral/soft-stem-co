@@ -1533,3 +1533,67 @@ input {
   }
 
 }
+/* ========================================
+   MOBILE POLISH
+======================================== */
+
+@media (max-width: 600px) {
+
+  /* Tighten header */
+  .header-inner {
+    padding: 16px 0 18px;
+    gap: 12px;
+  }
+
+  .brand-name {
+    font-size: 2.15rem;
+  }
+
+  .brand-tagline {
+    margin-top: 8px;
+  }
+
+  .main-nav {
+    gap: 14px;
+  }
+
+  /* Bring hero closer to navigation */
+  .hero {
+    margin-top: 0;
+  }
+
+  .hero-photo {
+    min-height: 340px;
+    background-position: center center;
+  }
+
+  /* Slightly tighter hero copy */
+  .hero-content {
+    min-height: auto;
+    padding: 48px 28px 58px;
+  }
+
+  .hero h1 {
+    font-size: 3.15rem;
+    line-height: 0.9;
+  }
+
+  .hero-copy {
+    font-size: 1.22rem;
+    margin: 26px 0;
+  }
+
+  /* Slightly smaller CTA */
+  .button {
+    padding: 14px 24px;
+  }
+
+  /* Shop cards */
+  .shop-section {
+    padding-top: 60px;
+  }
+
+  .product-photo {
+    aspect-ratio: 1 / 1;
+  }
+}
