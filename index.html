@@ -479,41 +479,46 @@
 
 
 
-      <form class="newsletter-form">
+  <form
+  action="https://formspree.io/f/mqpezvlo"
+  method="POST"
+  class="newsletter-form"
+>
 
+  <label for="newsletter-email" class="sr-only">
+    Email Address
+  </label>
 
-        <label
-          for="email"
-          class="sr-only"
-        >
-          Email Address
-        </label>
+  <input
+    type="email"
+    id="newsletter-email"
+    name="email"
+    placeholder="Enter your email address"
+    required
+  >
 
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Soft Stem Co. Newsletter Signup"
+  >
 
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email address"
-          required
-        >
+  <input
+    type="hidden"
+    name="_source"
+    value="Soft Stem Co. Homepage Newsletter"
+  >
 
+  <button type="submit">
+    Join the List
+  </button>
 
-        <button type="submit">
-          Join the List
-        </button>
+  <p class="form-disclaimer">
+    By subscribing, you agree to receive occasional marketing emails from
+    Soft Stem Co. You may unsubscribe at any time.
+  </p>
 
-
-        <p class="form-disclaimer">
-
-          By subscribing, you agree to receive occasional
-          marketing emails from Soft Stem Co.
-          You may unsubscribe at any time.
-
-        </p>
-
-
-      </form>
+</form>
 
 
     </section>
