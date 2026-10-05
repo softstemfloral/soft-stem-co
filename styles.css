@@ -1821,3 +1821,33 @@ input {
   }
 
 }
+
+@media (max-width: 600px) {
+
+  .service-item {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    justify-content: initial;
+    align-items: center;
+    gap: 18px;
+
+    width: 100%;
+    padding: 24px 20px;
+  }
+
+  .service-icon {
+    width: 44px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .service-item > div:last-child {
+    text-align: left;
+  }
+
+  .service-item h3,
+  .service-item p {
+    margin-left: 0;
+    text-align: left;
+  }
+}
