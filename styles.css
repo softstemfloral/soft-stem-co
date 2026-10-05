@@ -1590,3 +1590,234 @@ input {
     aspect-ratio: 1 / 1;
   }
 }
+/* ========================================
+   INNER PAGES
+======================================== */
+
+.page-hero {
+  padding: 90px 6%;
+  text-align: center;
+  background:
+    linear-gradient(
+      135deg,
+      var(--cream),
+      var(--blush)
+    );
+}
+
+.page-hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 500;
+  line-height: 0.95;
+  color: var(--brown);
+}
+
+.page-hero > p:last-child {
+  max-width: 600px;
+  margin: 22px auto 0;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+
+/* About */
+
+.about-layout {
+  width: min(1200px, 90%);
+  margin: auto;
+  padding: 95px 0;
+
+  display: grid;
+  grid-template-columns: 42% 58%;
+  gap: 75px;
+
+  align-items: center;
+}
+
+.about-photo-placeholder {
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f5d8d4,
+      #fcece7
+    );
+
+  border: 1px solid var(--border);
+}
+
+.about-photo-placeholder span {
+  display: block;
+
+  color: var(--burgundy);
+
+  font-family: var(--serif);
+  font-size: 2rem;
+}
+
+.about-photo-placeholder p {
+  margin-top: 8px;
+
+  color: var(--muted-brown);
+
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+.about-copy h2 {
+  margin-bottom: 28px;
+
+  font-family: var(--serif);
+  font-size: clamp(3rem, 5vw, 4.8rem);
+
+  font-weight: 500;
+  line-height: 1;
+}
+
+.about-copy > p:not(.eyebrow):not(.about-signature) {
+  margin-bottom: 22px;
+
+  color: var(--muted-brown);
+
+  font-size: 0.96rem;
+  line-height: 1.9;
+}
+
+.about-signature {
+  margin-top: 25px;
+
+  color: var(--burgundy);
+
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+}
+
+.about-quote {
+  padding: 85px 8%;
+
+  text-align: center;
+
+  background: var(--blush);
+}
+
+.about-quote p {
+  max-width: 900px;
+
+  margin: auto;
+
+  font-family: var(--serif);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+
+  font-style: italic;
+  line-height: 1.15;
+
+  color: var(--burgundy);
+}
+
+
+/* Policy pages */
+
+.policy-hero {
+  padding-bottom: 75px;
+}
+
+.policy-page {
+  width: min(850px, 88%);
+
+  margin: auto;
+
+  padding: 80px 0 100px;
+}
+
+.policy-page h2 {
+  margin-top: 45px;
+  margin-bottom: 12px;
+
+  color: var(--burgundy);
+
+  font-family: var(--serif);
+  font-size: 2rem;
+
+  font-weight: 500;
+}
+
+.policy-page p {
+  margin-bottom: 18px;
+
+  color: var(--muted-brown);
+
+  font-size: 0.92rem;
+  line-height: 1.9;
+}
+
+.policy-updated {
+  margin-bottom: 30px !important;
+
+  color: var(--rose) !important;
+
+  font-size: 0.68rem !important;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+/* Inner page mobile */
+
+@media (max-width: 800px) {
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-photo-placeholder {
+    min-height: 450px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .page-hero {
+    padding: 65px 25px;
+  }
+
+  .page-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .about-layout {
+    width: 88%;
+    padding: 65px 0;
+  }
+
+  .about-photo-placeholder {
+    min-height: 390px;
+  }
+
+  .about-copy h2 {
+    font-size: 3rem;
+  }
+
+  .about-quote {
+    padding: 65px 25px;
+  }
+
+  .policy-page {
+    padding: 60px 0 80px;
+  }
+
+}
