@@ -238,19 +238,12 @@ input {
 
 
 .brand-name {
-
   display: block;
-
-  font-family: var(--serif);
-
-  font-style: italic;
-
-  font-weight: 500;
-
-  font-size: 3rem;
-
-  line-height: 0.85;
-
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--deep-burgundy);
 }
 
 
@@ -1413,7 +1406,7 @@ input {
 
   .brand-name {
 
-    font-size: 2.25rem;
+    font-size: 3.25rem;
 
   }
 
@@ -1546,7 +1539,7 @@ input {
   }
 
   .brand-name {
-    font-size: 2.15rem;
+    font-size: 3.25rem;
   }
 
   .brand-tagline {
