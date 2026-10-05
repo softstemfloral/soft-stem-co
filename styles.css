@@ -2483,3 +2483,29 @@ input {
   }
 
 }
+/* CONTACT INSTAGRAM ICON HARD FIX */
+
+.contact-instagram {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.contact-instagram svg {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  max-width: 20px !important;
+  max-height: 20px !important;
+  flex: 0 0 20px !important;
+  display: block !important;
+  fill: var(--burgundy) !important;
+}
+
+.contact-instagram span {
+  display: inline !important;
+  font-size: 0.92rem !important;
+}
